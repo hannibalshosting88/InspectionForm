@@ -41,6 +41,20 @@
             box-sizing: border-box;
         }
 
+        .radio-group {
+            margin-bottom: 16px; /* Add spacing between radio groups */
+            display: flex; /* Use flexbox for horizontal alignment */
+        }
+
+        .radio-group label {
+            margin-right: 20px; /* Add spacing between radio buttons */
+        }
+
+        .radio-group-heading {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
         .clearfix::after {
             content: "";
             clear: both;
@@ -66,50 +80,54 @@
     <div id="page1" class="form-section active">
         <h2>Vehicle Info</h2>
         <div class="column">
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field001">Year:</label>
+            <input type="text" id="field001" name="field001" placeholder="   1900, 2008..." required>
 
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+            <label for="field002">Make:</label>
+            <input type="text" id="field002" name="field002" placeholder="Ford, Toyota, etc." required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field003">Model:</label>
+            <input type="text" id="field003" name="field003" placeholder="F-150, Prius, etc." required>
 
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+            <label for="field004">Mileage:</label>
+            <input type="text" id="field004" name="field004" placeholder="Presumabley somewhere between 1 and infinity..." required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field005">Transmission:</label>
+            <input type="text" id="field005" name="field005" placeholder="Automatic or Manual? How many gears?" required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field006">Engine #:</label>
+            <input type="text" id="field006" name="field006" placeholder="If found..">
+
+            <label for="field007">Transmission #:</label>
+            <input type="text" id="field007" name="field007" placeholder="If found....">
+           
             <!-- Add more fields as needed -->
 
         </div>
         <div class="column">
-            <label for="field3">Field 3:</label>
-            <input type="text" id="field3" name="field3" placeholder="Enter Field 3" required>
+           
+            <label for="field008">Stock #:</label>
+            <input type="text" id="field008" name="field008" placeholder="Dealership dependant">
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field009">Interior Material:</label>
+            <input type="text" id="field009" name="field009" placeholder="Cloth,Leather,Vinyl,etc." required>
 
-            <label for="field4">Field 4:</label>
-            <input type="text" id="field4" name="field4" placeholder="Enter Field 4" required>
+            <label for="field010">Interior Color:</label>
+            <input type="text" id="field010" name="field010" placeholder=".." required>
 
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+            <label for="field011">Body Color:</label>
+            <input type="text" id="field011" name="field011" placeholder=".." required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field012">Engine Size,Type:</label>
+            <input type="text" id="field012" name="field012" placeholder="How many liters split between how many cylinders in what orientation?" required>
 
-            <label for="field1">Field 1:</label>
-            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+            <label for="field014>Drive Type:</label>
+            <input type="text" id="field014" name="field014" placeholder="Which wheels are pushing and how?" required>
 
-            <label for="field2">Field 2:</label>
-            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <label for="field013">VIN#:</label>
+            <input type="text" id="field013" name="field013" placeholder="17 digit alphanumeric" required>
+
             <!-- Add more fields as needed -->
 
         </div>
@@ -120,8 +138,38 @@
 
     <div id="page2" class="form-section">
         <h2>Exterior</h2>
-        <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="4" required></textarea>
+        <div class="column-container">
+
+            <!-- Radio Group 1 -->
+            <div class="column radio-group">
+                <div class="radio-group-heading">Wiper Blades</div>
+                <label for="option1_group1">Good</label>
+                <input type="radio" id="option1_group1" name="group1" value="option1">
+
+                <label for="option2_group1">N/A</label>
+                <input type="radio" id="option2_group1" name="group1" value="option2">
+
+                <label for="option3_group1">Issues</label>
+                <input type="radio" id="option3_group1" name="group1" value="option3">
+            </div>
+
+            <!-- Repeat for Radio Groups 2 through 35 -->
+            
+            <div class="column radio-group">
+                <div class="radio-group-heading">Windshield Washer</div>
+                <label for="option1_group002">Good</label>
+                <input type="radio" id="option1_group002" name="group002" value="option1">
+
+                <label for="option2_group002">N/A</label>
+                <input type="radio" id="option2_group002" name="group002" value="option2">
+
+                <label for="option3_group002">Issues</label>
+                <input type="radio" id="option3_group002" name="group002" value="option3">
+            </div>
+
+
+        </div>
+        <div class="clearfix"></div>
 
         <button onclick="prevPage()">Previous</button>
         <button onclick="nextPage()">Next</button>
@@ -156,6 +204,7 @@
     </div>
 
     <script>
+        
         let currentSection = 0;
         const formSections = document.querySelectorAll('.form-section');
 
