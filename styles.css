@@ -1,0 +1,82 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+.form-section {
+    display: none;
+}
+
+.form-section.active {
+    display: block;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}
+
+.column-container {
+    text-align: center; /* Center the columns */
+}
+
+.column {
+    display: inline-block; /* Display columns inline */
+    width: 45%;
+    margin: 20px; /* Add margin between columns */
+    box-sizing: border-box;
+}
+
+.radio-group {
+    margin-bottom: 1vw; /* Add spacing between radio groups */
+    display: flex; /* Use flexbox for horizontal alignment */
+}
+
+.radio-group label {
+    margin-right: 1vw;
+    margin-left: 1vw; /* Add spacing between radio buttons */
+}
+
+.radio-group-heading {
+    font-weight: bold;
+    margin-right: 1vw;
+}
+
+input[type="radio"] {
+    width: 1%; /* Set a relative width (% of viewport width) */
+    height: 1vw; /* Set a relative height (% of viewport width) */
+    min-width: 15px; /* Set a minimum width */
+    min-height: 15px; /* Set a minimum height */
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.issue-details {
+    display: '';
+}
+
+h2 {
+    text-align: center; /* Centering the page titles */
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

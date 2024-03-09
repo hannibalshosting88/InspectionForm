@@ -3,78 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Progressive Form</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-
-        .form-section {
-            display: none;
-        }
-
-        .form-section.active {
-            display: block;
-        }
-
-        label {
-            display: block;
-            margin-bottom: 8px;
-        }
-
-        input, textarea {
-            width: 100%;
-            padding: 8px;
-            margin-bottom: 16px;
-            box-sizing: border-box;
-        }
-
-        .column-container {
-            text-align: center; /* Center the columns */
-        }
-
-        .column {
-            display: inline-block; /* Display columns inline */
-            width: 45%;
-            margin: 20px; /* Add margin between columns */
-            box-sizing: border-box;
-        }
-
-        .radio-group {
-            margin-bottom: 16px; /* Add spacing between radio groups */
-            display: flex; /* Use flexbox for horizontal alignment */
-        }
-
-        .radio-group label {
-            margin-right: 20px; /* Add spacing between radio buttons */
-        }
-
-        .radio-group-heading {
-            font-weight: bold;
-            margin-bottom: 8px;
-        }
-
-        .clearfix::after {
-            content: "";
-            clear: both;
-            display: table;
-        }
-
-
-        h2 {
-            text-align: center; /* Centering the page titles */
-        }
-
-        button {
-            background-color: #4CAF50;
-            color: white;
-            padding: 10px 15px;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    </style>
+    <title>OTT Inspections</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script type="text/javascript" src="script.js" defer></script>
 </head>
 <body>
     <div id="page1" class="form-section active">
@@ -122,7 +53,7 @@
             <label for="field012">Engine Size,Type:</label>
             <input type="text" id="field012" name="field012" placeholder="How many liters split between how many cylinders in what orientation?" required>
 
-            <label for="field014>Drive Type:</label>
+            <label for="field014">Drive Type:</label>
             <input type="text" id="field014" name="field014" placeholder="Which wheels are pushing and how?" required>
 
             <label for="field013">VIN#:</label>
@@ -138,37 +69,93 @@
 
     <div id="page2" class="form-section">
         <h2>Exterior</h2>
-        <div class="column-container">
+        
+            <div class="column-container">
+                <div class="column">
+                
+                    <div class="column radio-group">
+                        <div class="radio-group-heading">Wiper Blades</div>
 
-            <!-- Radio Group 1 -->
-            <div class="column radio-group">
-                <div class="radio-group-heading">Wiper Blades</div>
-                <label for="option1_group1">Good</label>
-                <input type="radio" id="option1_group1" name="group1" value="option1">
+                        <label for="Good_group1">Good</label>
+                        <input type="radio" id="Good_group1" name="group1" value="Good">
 
-                <label for="option2_group1">N/A</label>
-                <input type="radio" id="option2_group1" name="group1" value="option2">
+                        <label for="N/A_group1">N/A</label>
+                        <input type="radio" id="N/A_group1" name="group1" value="N/A">
 
-                <label for="option3_group1">Issues</label>
-                <input type="radio" id="option3_group1" name="group1" value="option3">
-            </div>
+                        <label for="Issues_group1">Issues</label>
+                        <input type="radio" id="Issues_group1" name="group1" value="Issues" onchange="toggleIssueDetails('issueDetails_group1')">
 
-            <!-- Repeat for Radio Groups 2 through 35 -->
-            
-            <div class="column radio-group">
-                <div class="radio-group-heading">Windshield Washer</div>
-                <label for="option1_group002">Good</label>
-                <input type="radio" id="option1_group002" name="group002" value="option1">
+                        <div class="issue-details" id="issueDetails_group1">
+                            <label for="issueDetailsText_group1">Details:</label>
+                            <textarea id="issueDetailsText_group1" name="issueDetailsText_group1" rows="4"></textarea>
+                        </div>
 
-                <label for="option2_group002">N/A</label>
-                <input type="radio" id="option2_group002" name="group002" value="option2">
+                    </div>
 
-                <label for="option3_group002">Issues</label>
-                <input type="radio" id="option3_group002" name="group002" value="option3">
-            </div>
+                    <div class="column radio-group">
+                        <div class="radio-group-heading">Wiper Blades</div>
+                    
+                        <label for="Good_group002">Good</label>
+                        <input type="radio" id="Good_group002" name="group002" value="Good">
+                    
+                        <label for="N/A_group002">N/A</label>
+                        <input type="radio" id="N/A_group002" name="group002" value="N/A">
+                    
+                        <label for="Issues_group002">Issues</label>
+                        <input type="radio" id="Issues_group002" name="group002" value="Issues" onchange="toggleIssueDetails('issueDetails_group002')">
+                    
+                        <div class="issue-details" id="issueDetails_group002">
+                            <label for="issueDetailsText_group002">Details:</label>
+                            <textarea id="issueDetailsText_group002" name="issueDetailsText_group002" rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
 
+                <div class="column">
+                
+                    <div class="column radio-group">
+                        <div class="radio-group-heading">Wiper Blades</div>
+                    
+                        <label for="Good_group003">Good</label>
+                        <input type="radio" id="Good_group003" name="group003" value="Good">
+                    
+                        <label for="N/A_group003">N/A</label>
+                        <input type="radio" id="N/A_group003" name="group003" value="N/A">
+                    
+                        <label for="Issues_group003">Issues</label>
+                        <input type="radio" id="Issues_group003" name="group003" value="Issues" onchange="toggleIssueDetails('issueDetails_group003')">
+                    
+                        <div class="issue-details" id="issueDetails_group003">
+                            <label for="issueDetailsText_group003">Details:</label>
+                            <textarea id="issueDetailsText_group003" name="issueDetailsText_group003" rows="4"></textarea>
+                        </div>
+                    </div>
+                    
 
-        </div>
+                    <div class="column radio-group">
+                        <div class="radio-group-heading">Wiper Blades</div>
+                    
+                        <label for="Good_group004">Good</label>
+                        <input type="radio" id="Good_group004" name="group004" value="Good">
+                    
+                        <label for="N/A_group004">N/A</label>
+                        <input type="radio" id="N/A_group004" name="group004" value="N/A">
+                    
+                        <label for="Issues_group004">Issues</label>
+                        <input type="radio" id="Issues_group004" name="group004" value="Issues" onchange="toggleIssueDetails('issueDetails_group004')">
+                    
+                        <div class="issue-details" id="issueDetails_group004">
+                            <label for="issueDetailsText_group004">Details:</label>
+                            <textarea id="issueDetailsText_group004" name="issueDetailsText_group004" rows="4"></textarea>
+                        </div>
+                    </div>
+                    
+                </div>
+
+            </div>     
+        
+        
         <div class="clearfix"></div>
 
         <button onclick="prevPage()">Previous</button>
@@ -203,35 +190,6 @@
         <button type="button" onclick="submitForm()">Submit</button>
     </div>
 
-    <script>
-        
-        let currentSection = 0;
-        const formSections = document.querySelectorAll('.form-section');
 
-        function nextPage() {
-            if (currentSection < formSections.length - 1) {
-                formSections[currentSection].classList.remove('active');
-                currentSection++;
-                formSections[currentSection].classList.add('active');
-            }
-        }
-
-        function prevPage() {
-            if (currentSection > 0) {
-                formSections[currentSection].classList.remove('active');
-                currentSection--;
-                formSections[currentSection].classList.add('active');
-            }
-        }
-
-        function submitForm() {
-            // You can add validation here before submitting the form
-
-            // Simulate form submission (replace this with actual form submission logic)
-            alert("Form submitted successfully!");
-            document.getElementById("page1").classList.add('active');
-            currentSection = 0;
-        }
-    </script>
 </body>
 </html>
