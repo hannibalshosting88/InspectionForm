@@ -1,18 +1,21 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Form</title>
+    <title>Progressive Form</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 20px;
         }
 
-        form {
-            max-width: 600px;
-            margin: auto;
+        .form-section {
+            display: none;
+        }
+
+        .form-section.active {
+            display: block;
         }
 
         label {
@@ -27,6 +30,28 @@
             box-sizing: border-box;
         }
 
+        .column-container {
+            text-align: center; /* Center the columns */
+        }
+
+        .column {
+            display: inline-block; /* Display columns inline */
+            width: 45%;
+            margin: 20px; /* Add margin between columns */
+            box-sizing: border-box;
+        }
+
+        .clearfix::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
+
+
+        h2 {
+            text-align: center; /* Centering the page titles */
+        }
+
         button {
             background-color: #4CAF50;
             color: white;
@@ -38,29 +63,125 @@
     </style>
 </head>
 <body>
-    <form id="myForm">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+    <div id="page1" class="form-section active">
+        <h2>Vehicle Info</h2>
+        <div class="column">
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
 
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <!-- Add more fields as needed -->
+
+        </div>
+        <div class="column">
+            <label for="field3">Field 3:</label>
+            <input type="text" id="field3" name="field3" placeholder="Enter Field 3" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+
+            <label for="field4">Field 4:</label>
+            <input type="text" id="field4" name="field4" placeholder="Enter Field 4" required>
+
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+
+            <label for="field1">Field 1:</label>
+            <input type="text" id="field1" name="field1" placeholder="Enter Field 1" required>
+
+            <label for="field2">Field 2:</label>
+            <input type="text" id="field2" name="field2" placeholder="Enter Field 2" required>
+            <!-- Add more fields as needed -->
+
+        </div>
+        <div class="clearfix"></div>
+
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div id="page2" class="form-section">
+        <h2>Exterior</h2>
         <label for="description">Description:</label>
         <textarea id="description" name="description" rows="4" required></textarea>
 
+        <button onclick="prevPage()">Previous</button>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div id="page3" class="form-section">
+        <h2>Interior</h2>
         <label for="picture">Upload Picture:</label>
         <input type="file" id="picture" name="picture" accept="image/*">
 
         <label for="video">Upload Video:</label>
         <input type="file" id="video" name="video" accept="video/*">
 
+        <button onclick="prevPage()">Previous</button>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div id="page4" class="form-section">
+        <h2>New Page 4</h2>
+        <!-- Add content for the new page as needed -->
+
+        <button onclick="prevPage()">Previous</button>
+        <button onclick="nextPage()">Next</button>
+    </div>
+
+    <div id="page5" class="form-section">
+        <h2>New Page 5</h2>
+        <!-- Add content for the new page as needed -->
+
+        <button onclick="prevPage()">Previous</button>
         <button type="button" onclick="submitForm()">Submit</button>
-    </form>
+    </div>
 
     <script>
+        let currentSection = 0;
+        const formSections = document.querySelectorAll('.form-section');
+
+        function nextPage() {
+            if (currentSection < formSections.length - 1) {
+                formSections[currentSection].classList.remove('active');
+                currentSection++;
+                formSections[currentSection].classList.add('active');
+            }
+        }
+
+        function prevPage() {
+            if (currentSection > 0) {
+                formSections[currentSection].classList.remove('active');
+                currentSection--;
+                formSections[currentSection].classList.add('active');
+            }
+        }
+
         function submitForm() {
             // You can add validation here before submitting the form
 
             // Simulate form submission (replace this with actual form submission logic)
             alert("Form submitted successfully!");
-            document.getElementById("myForm").reset();
+            document.getElementById("page1").classList.add('active');
+            currentSection = 0;
         }
     </script>
 </body>
