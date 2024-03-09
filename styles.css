@@ -16,6 +16,12 @@ label {
     margin-bottom: 2%;
 }
 
+/* CSS to initially hide text areas */
+textarea {
+    display: none;
+}
+
+
 input, textarea {
     width: 100%;
     padding: 8px;
