@@ -1,12 +1,3 @@
-// script.js
-
-function toggleIssueDetails(issueDetailsId) {
-    const issueDetails = document.getElementById(issueDetailsId);
-    if (issueDetails) {
-        issueDetails.style.display = (issueDetails.style.display === 'none') ? 'block' : 'none';
-    }
-}
-
 let currentSection = 0;
 const formSections = document.querySelectorAll('.form-section');
 
@@ -31,6 +22,6 @@ function submitForm() {
 
     // Simulate form submission (replace this with actual form submission logic)
     alert("Form submitted successfully!");
-    document.getElementById("page1").classList.add('active');
+    formSections[0].classList.add('active');
     currentSection = 0;
 }

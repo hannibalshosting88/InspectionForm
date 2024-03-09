@@ -68,96 +68,74 @@
     </div>
 
     <div id="page2" class="form-section">
-        <h2>Exterior</h2>
+    <h2>Exterior</h2>
+    
+    <div class="column-container"> <!-- Open the container div here -->
+        <div class="column">
+
+            <!-- First Radio Block -->
+            <div class="column radio-group">
+                <div class="radio-group-heading">Wiper Blades</div>
+            
+                <label for="Good_group001">Good</label>
+                <input type="radio" id="Good_group001" name="group001" value="Good">
+            
+                <label for="N/A_group001">N/A</label>
+                <input type="radio" id="N/A_group001" name="group001" value="N/A">
+            
+                <label for="Issues_group001">Issues</label>
+                <input type="radio" id="Issues_group001" name="group001" value="Issues">
+            </div>
+
+            <!-- Second Radio Block -->
+            <div class="column radio-group">
+                <div class="radio-group-heading">Another Group</div>
+
+                <label for="Good_group002">Good</label>
+                <input type="radio" id="Good_group002" name="group002" value="Good">
+
+                <label for="N/A_group002">N/A</label>
+                <input type="radio" id="N/A_group002" name="group002" value="N/A">
+
+                <label for="Issues_group002">Issues</label>
+                <input type="radio" id="Issues_group002" name="group002" value="Issues">
+            </div>
+        </div> <!-- Close the column div here -->
         
-            <div class="column-container">
-                <div class="column">
-                
-                    <div class="column radio-group">
-                        <div class="radio-group-heading">Wiper Blades</div>
+        <div class="column">
+            <!-- Third Radio Block -->
+            <div class="column radio-group">
+                <div class="radio-group-heading">Group 27</div>
 
-                        <label for="Good_group1">Good</label>
-                        <input type="radio" id="Good_group1" name="group1" value="Good">
+                <label for="Good_group003">Good</label>
+                <input type="radio" id="Good_group003" name="group003" value="Good">
 
-                        <label for="N/A_group1">N/A</label>
-                        <input type="radio" id="N/A_group1" name="group1" value="N/A">
+                <label for="N/A_group003">N/A</label>
+                <input type="radio" id="N/A_group003" name="group003" value="N/A">
 
-                        <label for="Issues_group1">Issues</label>
-                        <input type="radio" id="Issues_group1" name="group1" value="Issues" onchange="toggleIssueDetails('issueDetails_group1')">
+                <label for="Issues_group003">Issues</label>
+                <input type="radio" id="Issues_group003" name="group003" value="Issues">
 
-                        <div class="issue-details" id="issueDetails_group1">
-                            <label for="issueDetailsText_group1">Details:</label>
-                            <textarea id="issueDetailsText_group1" name="issueDetailsText_group1" rows="4"></textarea>
-                        </div>
+            </div>
 
-                    </div>
+            <!-- Fourth Radio Block -->
+            <div class="column radio-group">
+                <div class="radio-group-heading">Rule 43</div>
 
-                    <div class="column radio-group">
-                        <div class="radio-group-heading">Wiper Blades</div>
-                    
-                        <label for="Good_group002">Good</label>
-                        <input type="radio" id="Good_group002" name="group002" value="Good">
-                    
-                        <label for="N/A_group002">N/A</label>
-                        <input type="radio" id="N/A_group002" name="group002" value="N/A">
-                    
-                        <label for="Issues_group002">Issues</label>
-                        <input type="radio" id="Issues_group002" name="group002" value="Issues" onchange="toggleIssueDetails('issueDetails_group002')">
-                    
-                        <div class="issue-details" id="issueDetails_group002">
-                            <label for="issueDetailsText_group002">Details:</label>
-                            <textarea id="issueDetailsText_group002" name="issueDetailsText_group002" rows="4"></textarea>
-                        </div>
-                    </div>
-                    
+                <label for="Good_group004">Good</label>
+                <input type="radio" id="Good_group004" name="group004" value="Good">
+
+                <label for="N/A_group004">N/A</label>
+                <input type="radio" id="N/A_group004" name="group004" value="N/A">
+
+                <label for="Issues_group004">Issues</label>
+                <input type="radio" id="Issues_group004" name="group004" value="Issues">
+
                 </div>
-
-                <div class="column">
-                
-                    <div class="column radio-group">
-                        <div class="radio-group-heading">Wiper Blades</div>
-                    
-                        <label for="Good_group003">Good</label>
-                        <input type="radio" id="Good_group003" name="group003" value="Good">
-                    
-                        <label for="N/A_group003">N/A</label>
-                        <input type="radio" id="N/A_group003" name="group003" value="N/A">
-                    
-                        <label for="Issues_group003">Issues</label>
-                        <input type="radio" id="Issues_group003" name="group003" value="Issues" onchange="toggleIssueDetails('issueDetails_group003')">
-                    
-                        <div class="issue-details" id="issueDetails_group003">
-                            <label for="issueDetailsText_group003">Details:</label>
-                            <textarea id="issueDetailsText_group003" name="issueDetailsText_group003" rows="4"></textarea>
-                        </div>
-                    </div>
-                    
-
-                    <div class="column radio-group">
-                        <div class="radio-group-heading">Wiper Blades</div>
-                    
-                        <label for="Good_group004">Good</label>
-                        <input type="radio" id="Good_group004" name="group004" value="Good">
-                    
-                        <label for="N/A_group004">N/A</label>
-                        <input type="radio" id="N/A_group004" name="group004" value="N/A">
-                    
-                        <label for="Issues_group004">Issues</label>
-                        <input type="radio" id="Issues_group004" name="group004" value="Issues" onchange="toggleIssueDetails('issueDetails_group004')">
-                    
-                        <div class="issue-details" id="issueDetails_group004">
-                            <label for="issueDetailsText_group004">Details:</label>
-                            <textarea id="issueDetailsText_group004" name="issueDetailsText_group004" rows="4"></textarea>
-                        </div>
-                    </div>
-                    
-                </div>
-
-            </div>     
-        
-        
+            </div>
+           
+        </div>  <!-- Close the column div here -->
         <div class="clearfix"></div>
-
         <button onclick="prevPage()">Previous</button>
         <button onclick="nextPage()">Next</button>
     </div>
