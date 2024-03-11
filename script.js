@@ -57,6 +57,12 @@ document.addEventListener('DOMContentLoaded', function () {
         `;
     }
 
+
+
+//  *******************EDITING ARRAYS!!!!!!!!!!!!*******************////
+
+
+
     // Arrays containing group names for each container on each page
     const groupNamesPage2_1 = ['GroupA', 'GroupB', 'GroupC'];
     const groupNamesPage2_2 = ['GroupX', 'GroupY'];
@@ -64,12 +70,49 @@ document.addEventListener('DOMContentLoaded', function () {
     const groupNamesPage3_1 = ['GroupAlpha', 'GroupBeta', 'GroupGamma', 'GroupDelta'];
     const groupNamesPage3_2 = ['GroupOne', 'GroupTwo'];
 
+     // Arrays containing group names for each container on each new page
+     const groupNamesPage4_1 = ['NewGroup1', 'NewGroup2'];
+     const groupNamesPage4_2 = ['NewGroup3', 'NewGroup4'];
+ 
+     const groupNamesPage5_1 = ['NewGroup5', 'NewGroup6'];
+     const groupNamesPage5_2 = ['NewGroup7', 'NewGroup8'];
+
+     // Arrays containing group names for each container on each new page
+    const groupNamesPage6_1 = ['NewGroup9', 'NewGroup10'];
+    const groupNamesPage6_2 = ['NewGroup11', 'NewGroup12'];
+
+    const groupNamesPage7_1 = ['NewGroup13', 'NewGroup14'];
+    const groupNamesPage7_2 = ['NewGroup15', 'NewGroup16'];
+ 
     // Variables for the number of groups in each container for each page
     const numGroupsPage2_1 = 3;
     const numGroupsPage2_2 = 2;
 
     const numGroupsPage3_1 = 4;
     const numGroupsPage3_2 = 2;
+
+    // Variables for the number of groups in each container for each new page
+    const numGroupsPage4_1 = 2;
+    const numGroupsPage4_2 = 2;
+
+    const numGroupsPage5_1 = 2;
+    const numGroupsPage5_2 = 2;
+
+     // Variables for the number of groups in each container for each new page
+     const numGroupsPage6_1 = 2;
+     const numGroupsPage6_2 = 2;
+ 
+     const numGroupsPage7_1 = 2;
+     const numGroupsPage7_2 = 2;
+     
+
+
+
+
+    ////!!!!!!!****************EDITING ARRAYS*********!!!!!!//
+
+
+
 
     // Containers where groups will be added for page 2
     const groupContainerPage2_1 = document.getElementById('groupContainerPage2_1');
@@ -104,4 +147,76 @@ document.addEventListener('DOMContentLoaded', function () {
         const groupHTMLPage3_2 = generateGroupHTML('groupContainerPage3_2', groupName, i + 1);
         groupContainerPage3_2.insertAdjacentHTML('beforeend', groupHTMLPage3_2);
     }
+
+    
+     // Containers where groups will be added for page 4
+     const groupContainerPage4_1 = document.getElementById('groupContainerPage4_1');
+     const groupContainerPage4_2 = document.getElementById('groupContainerPage4_2');
+ 
+     // Generate HTML for each group on page 4 and append it to the containers
+     for (let i = 0; i < numGroupsPage4_1; i++) {
+         const groupName = groupNamesPage4_1[i];
+         const groupHTMLPage4_1 = generateGroupHTML('groupContainerPage4_1', groupName, i + 1);
+         groupContainerPage4_1.insertAdjacentHTML('beforeend', groupHTMLPage4_1);
+     }
+ 
+     for (let i = 0; i < numGroupsPage4_2; i++) {
+         const groupName = groupNamesPage4_2[i];
+         const groupHTMLPage4_2 = generateGroupHTML('groupContainerPage4_2', groupName, i + 1);
+         groupContainerPage4_2.insertAdjacentHTML('beforeend', groupHTMLPage4_2);
+     }
+ 
+     // Containers where groups will be added for page 5
+     const groupContainerPage5_1 = document.getElementById('groupContainerPage5_1');
+     const groupContainerPage5_2 = document.getElementById('groupContainerPage5_2');
+ 
+     // Generate HTML for each group on page 5 and append it to the containers
+     for (let i = 0; i < numGroupsPage5_1; i++) {
+         const groupName = groupNamesPage5_1[i];
+         const groupHTMLPage5_1 = generateGroupHTML('groupContainerPage5_1', groupName, i + 1);
+         groupContainerPage5_1.insertAdjacentHTML('beforeend', groupHTMLPage5_1);
+     }
+ 
+     for (let i = 0; i < numGroupsPage5_2; i++) {
+         const groupName = groupNamesPage5_2[i];
+         const groupHTMLPage5_2 = generateGroupHTML('groupContainerPage5_2', groupName, i + 1);
+         groupContainerPage5_2.insertAdjacentHTML('beforeend', groupHTMLPage5_2);
+     }
+
+
+     
+    // Containers where groups will be added for page 6
+    const groupContainerPage6_1 = document.getElementById('groupContainerPage6_1');
+    const groupContainerPage6_2 = document.getElementById('groupContainerPage6_2');
+
+    // Generate HTML for each group on page 6 and append it to the containers
+    for (let i = 0; i < numGroupsPage6_1; i++) {
+        const groupName = groupNamesPage6_1[i];
+        const groupHTMLPage6_1 = generateGroupHTML('groupContainerPage6_1', groupName, i + 1);
+        groupContainerPage6_1.insertAdjacentHTML('beforeend', groupHTMLPage6_1);
+    }
+
+    for (let i = 0; i < numGroupsPage6_2; i++) {
+        const groupName = groupNamesPage6_2[i];
+        const groupHTMLPage6_2 = generateGroupHTML('groupContainerPage6_2', groupName, i + 1);
+        groupContainerPage6_2.insertAdjacentHTML('beforeend', groupHTMLPage6_2);
+    }
+
+    // Containers where groups will be added for page 7
+    const groupContainerPage7_1 = document.getElementById('groupContainerPage7_1');
+    const groupContainerPage7_2 = document.getElementById('groupContainerPage7_2');
+
+    // Generate HTML for each group on page 7 and append it to the containers
+    for (let i = 0; i < numGroupsPage7_1; i++) {
+        const groupName = groupNamesPage7_1[i];
+        const groupHTMLPage7_1 = generateGroupHTML('groupContainerPage7_1', groupName, i + 1);
+        groupContainerPage7_1.insertAdjacentHTML('beforeend', groupHTMLPage7_1);
+    }
+
+    for (let i = 0; i < numGroupsPage7_2; i++) {
+        const groupName = groupNamesPage7_2[i];
+        const groupHTMLPage7_2 = generateGroupHTML('groupContainerPage7_2', groupName, i + 1);
+        groupContainerPage7_2.insertAdjacentHTML('beforeend', groupHTMLPage7_2);
+    }
 });
+
