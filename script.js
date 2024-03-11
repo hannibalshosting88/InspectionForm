@@ -218,6 +218,47 @@ document.addEventListener('DOMContentLoaded', function () {
         const groupHTMLPage7_2 = generateGroupHTML('groupContainerPage7_2', groupName, i + 1);
         groupContainerPage7_2.insertAdjacentHTML('beforeend', groupHTMLPage7_2);
     }
+
+    // Function to handle file uploads and display them
+    function handleFileUpload(inputId, containerId) {
+        const fileInput = document.getElementById(inputId);
+        const fileContainer = document.getElementById(containerId);
+
+        fileInput.addEventListener('change', function () {
+            const files = fileInput.files;
+
+            // Clear existing content in the container
+            fileContainer.innerHTML = '';
+
+            // Display each uploaded file
+            for (let i = 0; i < files.length; i++) {
+                const file = files[i];
+
+                // Create elements for displaying the file and comments
+                const fileDiv = document.createElement('div');
+                const fileImage = document.createElement('img');
+                const commentsInput = document.createElement('textarea');
+
+                // Set up image source, styles, and attributes
+                fileImage.src = URL.createObjectURL(file);
+                fileImage.style.maxWidth = '100%';
+                fileImage.style.maxHeight = '200px';
+                commentsInput.placeholder = 'Add comments...';
+
+                // Append elements to the container
+                fileDiv.appendChild(fileImage);
+                fileDiv.appendChild(commentsInput);
+                fileContainer.appendChild(fileDiv);
+            }
+        });
+    }
+
+    // Handle photo uploads
+    handleFileUpload('photoUpload', 'photoDisplayContainer');
+
+    // Handle video uploads
+    handleFileUpload('videoUpload', 'videoDisplayContainer');
+
 });
 
 
