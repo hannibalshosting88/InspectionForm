@@ -14,16 +14,26 @@ body {
     display: block;
 }
 
+@media only screen and (max-width: 500px) {
+    input[type="text"],
+    textarea {
+        width: 100%;
+        /* Add any additional styles for smaller screens */
+    }
+
+    /* Add more specific styles for smaller screens if needed */
+}
+
+
 .column-container {
     display: flex;
-    justify-content: space-between;
-    text-align:center;
-    align-items: center;
+    flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+    justify-content: center; /* Center items on smaller screens */
 }
 
 .columnpage1, .columnpage2 {
     text-align: center;
-    flex: 1;
+    flex: 1; /* Make each column take up the full width on smaller screens */
 }
 
 .columnpage1{
@@ -122,5 +132,4 @@ textarea {
     box-sizing: border-box;
     height: 5px;
 }
-
 
