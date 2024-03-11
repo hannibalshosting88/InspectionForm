@@ -1,0 +1,250 @@
+
+<div id="page2" class="form-section">
+<div class="container">
+    <h2 class="centered-title">Exterior
+    </h2>
+    <div class="column-container"> <!-- WHOLE PAGE CONTAINER-->
+
+        <div class="columnpage2">   <!-- OPEN 1 OUT OF 2 MAIN CONTAINERS-->
+
+            <!-- First Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Wiper Blades</div>
+            
+                <label for="Good_group001">Good</label>
+                <input type="radio" id="Good_group001" name="group001" value="Good">
+            
+                <label for="N/A_group001">N/A</label>
+                <input type="radio" id="N/A_group001" name="group001" value="N/A">
+            
+                <label for="Issues_group001">Issues</label>
+                <input type="radio" id="Issues_group001" name="group001" value="Issues">
+            </div>
+
+            <!-- First shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group001" name="Description_group001" placeholder="Describe issues....">
+                </textarea>              
+            </div>
+
+            <!-- Second Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Another Group</div>
+
+                <label for="Good_group002">Good</label>
+                <input type="radio" id="Good_group002" name="group002" value="Good">
+
+                <label for="N/A_group002">N/A</label>
+                <input type="radio" id="N/A_group002" name="group002" value="N/A">
+
+                <label for="Issues_group002">Issues</label>
+                <input type="radio" id="Issues_group002" name="group002" value="Issues">
+            </div>
+
+            <!-- Second shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group002" name="Description_group002" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Third Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 27
+                </div>
+
+                <label for="Good_group003">Good</label>
+                <input type="radio" id="Good_group003" name="group003" value="Good">
+
+                <label for="N/A_group003">N/A</label>
+                <input type="radio" id="N/A_group003" name="group003" value="N/A">
+
+                <label for="Issues_group003">Issues</label>
+                <input type="radio" id="Issues_group003" name="group003" value="Issues">
+            </div>
+
+            <!-- Third shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group003" name="Description_group003" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Fourth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Rule 43
+                </div>
+
+                <label for="Good_group004">Good</label>
+                <input type="radio" id="Good_group004" name="group004" value="Good">
+
+                <label for="N/A_group004">N/A</label>
+                <input type="radio" id="N/A_group004" name="group004" value="N/A">
+
+                <label for="Issues_group004">Issues</label>
+                <input type="radio" id="Issues_group004" name="group004" value="Issues">
+            </div>
+
+            <!-- Fourth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group004" name="Description_group004" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Fifth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 42
+                </div>
+
+                <label for="Good_group005">Good</label>
+                <input type="radio" id="Good_group005" name="group005" value="Good">
+
+                <label for="N/A_group005">N/A</label>
+                <input type="radio" id="N/A_group005" name="group005" value="N/A">
+
+                <label for="Issues_group005">Issues</label>
+                <input type="radio" id="Issues_group005" name="group005" value="Issues">
+            </div>
+
+            <!-- Fifth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group005" name="Description_group005" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Sixth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 55
+                </div>
+
+                <label for="Good_group006">Good</label>
+                <input type="radio" id="Good_group006" name="group006" value="Good">
+
+                <label for="N/A_group006">N/A</label>
+                <input type="radio" id="N/A_group006" name="group006" value="N/A">
+
+                <label for="Issues_group006">Issues</label>
+                <input type="radio" id="Issues_group006" name="group006" value="Issues">
+            </div>
+
+            <!-- Sixth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group006" name="Description_group006" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Seventh Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 68
+                </div>
+
+                <label for="Good_group007">Good</label>
+                <input type="radio" id="Good_group007" name="group007" value="Good">
+
+                <label for="N/A_group007">N/A</label>
+                <input type="radio" id="N/A_group007" name="group007" value="N/A">
+
+                <label for="Issues_group007">Issues</label>
+                <input type="radio" id="Issues_group007" name="group007" value="Issues">
+            </div>
+
+            <!-- Seventh shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group007" name="Description_group007" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Eighth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 74
+                </div>
+
+                <label for="Good_group008">Good</label>
+                <input type="radio" id="Good_group008" name="group008" value="Good">
+
+                <label for="N/A_group008">N/A</label>
+                <input type="radio" id="N/A_group008" name="group008" value="N/A">
+
+                <label for="Issues_group008">Issues</label>
+                <input type="radio" id="Issues_group008" name="group008" value="Issues">
+            </div>
+
+            <!-- Eighth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group008" name="Description_group008" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- more blocks for this one -->
+
+            <!-- Twenty-ninth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 291
+                </div>
+
+                <label for="Good_group029">Good</label>
+                <input type="radio" id="Good_group029" name="group029" value="Good">
+
+                <label for="N/A_group029">N/A</label>
+                <input type="radio" id="N/A_group029" name="group029" value="N/A">
+
+                <label for="Issues_group029">Issues</label>
+                <input type="radio" id="Issues_group029" name="group029" value="Issues">
+            </div>
+
+            <!-- Twenty-ninth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group029" name="Description_group029" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+        </div> <!-- CLOSE 1 OUT OF 2 MAIN CONTAINER -->
+        
+
+
+
+       
+
+        <div class="columnpage2">    <!-- OPEN 2 OUT OF 2 MAIN CONTAINER -->
+            
+            <!-- Eleventh Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 105
+                </div>
+
+                <label for="Good_group011">Good</label>
+                <input type="radio" id="Good_group011" name="group011" value="Good">
+
+                <label for="N/A_group011">N/A</label>
+                <input type="radio" id="N/A_group011" name="group011" value="N/A">
+
+                <label for="Issues_group011">Issues</label>
+                <input type="radio" id="Issues_group011" name="group011" value="Issues">
+            </div>
+
+            <!-- Eleventh shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group011" name="Description_group011" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!-- Twelfth Radio Block -->
+            <div class="columnpage2 radio-group">
+                <div class="radio-group-heading">Group 114
+                </div>
+
+                <label for="Good_group012">Good</label>
+                <input type="radio" id="Good_group012" name="group012" value="Good">
+
+                <label for="N/A_group012">N/A</label>
+                <input type="radio" id="N/A_group012" name="group012" value="N/A">
+
+                <label for="Issues_group012">Issues</label>
+                <input type="radio" id="Issues_group012" name="group012" value="Issues">
+            </div>
+
+            <!-- Twelfth shown text Block -->
+            <div class="columnpage2">
+                <textarea id="Description_group012" name="Description_group012" placeholder="Describe issues....">
+                </textarea>
+            </div>
+
+            <!--   etc -->
