@@ -20,9 +20,5 @@ function prevPage() {
 function submitForm() {
     // You can implement form submission logic here
     alert('Form submitted successfully!');
-<<<<<<< HEAD
-}
-=======
 }
 
->>>>>>> 907a37e43c83fc35878ba40641d82f43bc5afe60

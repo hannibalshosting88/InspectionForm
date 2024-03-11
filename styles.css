@@ -97,12 +97,8 @@ button:hover {
 .radio-group-heading {
     font-weight: 800;
     font-size: 1.25em;
-<<<<<<< HEAD
-     /* Adjust as needed for spacing between heading and radio buttons */
-=======
     margin-left: 2%; 
  /* Adjust as needed for spacing between heading and radio buttons */
->>>>>>> 907a37e43c83fc35878ba40641d82f43bc5afe60
     align-items: center;
     text-align: center;
 }
