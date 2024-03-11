@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-//  *******************EDITING ARRAYS!!!!!!!!!!!!*******************////
+//  *******************EDITING ARRAYS!!!!!!!!!!!!**************!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!*****////
 
 
 
@@ -85,10 +85,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const groupNamesPage7_2 = ['NewGroup15', 'NewGroup16'];
  
     // Variables for the number of groups in each container for each page
-    const numGroupsPage2_1 = 3;
+    const numGroupsPage2_1 = 2;
     const numGroupsPage2_2 = 2;
 
-    const numGroupsPage3_1 = 4;
+    const numGroupsPage3_1 = 2;
     const numGroupsPage3_2 = 2;
 
     // Variables for the number of groups in each container for each new page
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
 
-    ////!!!!!!!****************EDITING ARRAYS*********!!!!!!//
+    ////!!!!!!!****************EDITING ARRAYS*********!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!//
 
 
 
@@ -219,4 +219,7 @@ document.addEventListener('DOMContentLoaded', function () {
         groupContainerPage7_2.insertAdjacentHTML('beforeend', groupHTMLPage7_2);
     }
 });
+
+
+
 
