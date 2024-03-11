@@ -1,75 +1,126 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 20px;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+    text-align: center;
 }
 
 .form-section {
     display: none;
 }
 
-.form-section.active {
+.active {
     display: block;
+}
+
+.column-container {
+    display: flex;
+    justify-content: space-between;
+    text-align:center;
+    align-items: center;
+}
+
+.columnpage1, .columnpage2 {
+    text-align: center;
+    flex: 1;
+}
+
+.columnpage1{
+    text-align: center;
+}
+
+.columnpage2 {
+    padding: ;
+    text-align: center;
 }
 
 label {
     display: block;
-    margin-bottom: 2%;
-}
-
-/* CSS to initially hide text areas */
-textarea {
-    display: none;
-}
-
-
-input, textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 16px;
-    box-sizing: border-box;
-}
-
-.column-container {
+    box-align: center;
     text-align: center;
-}
-
-.column {
-    display: inline-block;
-    width: 40%;
-    margin: 1%;
-    box-sizing: border-box; /* Add this line */
-}
-
-.radio-group {
-    margin-bottom: 1vw;
-    display: flex;
-}
-
-.radio-group label {
-    margin-right: 1vw;
-    margin-left: 1vw;
-}
-
-.radio-group-heading {
-    font-weight: bold;
-    margin-right: 1vw;
-}
-
-.clearfix::after {
-    content: "";
-    clear: both;
-    display: table;
-}
-
-h2 {
-    text-align: center;
-}
+    }
 
 button {
     background-color: #4CAF50;
+    margin-top: 10px;
     color: white;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
+
+button:hover {
+    background-color: #45a049;
+}
+
+.clearfix {
+    clear: both;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 2%;
+}
+
+.centered-title {
+    text-align: center;
+    font-size: 2.5em;
+
+}
+
+/* Style for radio groups */
+.radio-group {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+/* Style for individual radio buttons */
+.radio-group label {
+    margin-right: 1%;
+    margin-left: 1%; /* Adjust as needed for spacing between labels and radio buttons */
+    align-items: center;
+    text-align: center;
+}
+
+.columnpage1 label{
+    margin: 0.5%;
+    align-items: center;
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 550;
+    
+}
+
+/* Style for the radio group heading */
+.radio-group-heading {
+    font-weight: 800;
+    font-size: 1.25em;
+    margin-left: 2%; 
+ /* Adjust as needed for spacing between heading and radio buttons */
+    align-items: center;
+    text-align: center;
+}
+
+
+input[type="text"],
+textarea {
+    width: 95%;
+    padding: 3%;
+    margin: 0.5%;
+    text-align: left;
+    box-sizing: border-box;
+    height: 10px;
+}
+
+.textarea {
+    width: 90%;
+    padding: 1%;
+    margin-left: 1%;
+    text-align: left;
+    box-sizing: border-box;
+    height: 5px;
+}
+
+
