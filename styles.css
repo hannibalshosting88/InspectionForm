@@ -160,4 +160,66 @@ textarea {
 }
 
 
+/*---------------------------------------MEDIA DISPLAY SETTINGS/ADJUSTMENTS-----------------------------------------------------------------------------------------*/
+
+/* Style for the container of uploaded photos and comments */
+#photoDisplayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; /* Adjust the space between photos */
+}
+
+/* Style for each photo and comments container */
+#photoDisplayContainer > div {
+    width: calc(20% - 20px); /* Adjust the width of each photo and comments container */
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+/* Style for the uploaded photo */
+#photoDisplayContainer img {
+    width: 100%;
+    max-height: 150px; /* Adjust the maximum height of the photos */
+    object-fit: contain;
+    border: 1px solid #ddd;
+}
+
+/* Style for the comments textarea */
+#photoDisplayContainer textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px; /* Adjust the space between photo and comments */
+}
+
+/* Similar styles for video display container */
+#videoDisplayContainer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#videoDisplayContainer > div {
+    width: calc(33.33% - 20px);
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+#videoDisplayContainer video {
+    width: 100%;
+    max-height: 150px;
+    object-fit: cover;
+    border: 1px solid #ddd;
+}
+
+#videoDisplayContainer textarea {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+
+
+
+
+
 
